@@ -193,9 +193,17 @@ static uint8_t ourMacAddr[6];
 
 NodeDB::NodeDB()
 {
+    Serial.println("DEBUG: NodeDB constructor START");
+    Serial.flush();
     LOG_INFO("Init NodeDB");
+    Serial.println("DEBUG: Before loadFromDisk()");
+    Serial.flush();
     loadFromDisk();
+    Serial.println("DEBUG: After loadFromDisk()");
+    Serial.flush();
     cleanupMeshDB();
+    Serial.println("DEBUG: After cleanupMeshDB()");
+    Serial.flush();
 
     uint32_t devicestateCRC = crc32Buffer(&devicestate, sizeof(devicestate));
     uint32_t nodeDatabaseCRC = crc32Buffer(&nodeDatabase, sizeof(nodeDatabase));
@@ -203,17 +211,27 @@ NodeDB::NodeDB()
     uint32_t channelFileCRC = crc32Buffer(&channelFile, sizeof(channelFile));
 
     int saveWhat = 0;
+    Serial.println("DEBUG: Before get device unique id");
+    Serial.flush();
     // Get device unique id
 #if defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32S3)
+    Serial.println("DEBUG: ESP32-S3 - Before eFuse read");
+    Serial.flush();
     uint32_t unique_id[4];
     // ESP32 factory burns a unique id in efuse for S2+ series and evidently C3+ series
     // This is used for HMACs in the esp-rainmaker AIOT platform and seems to be a good choice for us
     esp_err_t err = esp_efuse_read_field_blob(ESP_EFUSE_OPTIONAL_UNIQUE_ID, unique_id, sizeof(unique_id) * 8);
+    Serial.println("DEBUG: ESP32-S3 - After eFuse read");
+    Serial.flush();
     if (err == ESP_OK) {
         memcpy(myNodeInfo.device_id.bytes, unique_id, sizeof(unique_id));
         myNodeInfo.device_id.size = 16;
+        Serial.println("DEBUG: eFuse read SUCCESS");
+        Serial.flush();
     } else {
         LOG_WARN("Failed to read unique id from efuse");
+        Serial.println("DEBUG: eFuse read FAILED");
+        Serial.flush();
     }
 #elif defined(ARCH_NRF52)
     // Nordic applies a FIPS compliant Random ID to each chip at the factory
@@ -244,7 +262,11 @@ NodeDB::NodeDB()
     myNodeInfo.min_app_version = 30200; // format is Mmmss (where M is 1+the numeric major number. i.e. 30200 means 2.2.00
     // Note! We do this after loading saved settings, so that if somehow an invalid nodenum was stored in preferences we won't
     // keep using that nodenum forever. Crummy guess at our nodenum (but we will check against the nodedb to avoid conflicts)
+    Serial.println("DEBUG: Before pickNewNodeNum()");
+    Serial.flush();
     pickNewNodeNum();
+    Serial.println("DEBUG: After pickNewNodeNum()");
+    Serial.flush();
 
     // Set our board type so we can share it with others
     owner.hw_model = HW_VENDOR;
@@ -260,9 +282,16 @@ NodeDB::NodeDB()
         config.security.is_managed = config.device.is_managed;
     }
 
+    Serial.println("DEBUG: Before PKI section");
+    Serial.flush();
+
 #if !(MESHTASTIC_EXCLUDE_PKI_KEYGEN || MESHTASTIC_EXCLUDE_PKI)
 
+    Serial.println("DEBUG: PKI section - checking license and region");
+    Serial.flush();
     if (!owner.is_licensed && config.lora.region != meshtastic_Config_LoRaConfig_RegionCode_UNSET) {
+        Serial.println("DEBUG: PKI - generating/regenerating keys");
+        Serial.flush();
         bool keygenSuccess = false;
         if (config.security.private_key.size == 32) {
             if (crypto->regeneratePublicKey(config.security.public_key.bytes, config.security.private_key.bytes)) {
@@ -293,27 +322,49 @@ NodeDB::NodeDB()
     if (keyIsLowEntropy) {
         LOG_WARN(LOW_ENTROPY_WARNING);
     }
+    Serial.println("DEBUG: After PKI section");
+    Serial.flush();
     // Include our owner in the node db under our nodenum
+    Serial.println("DEBUG: Before getOrCreateMeshNode()");
+    Serial.flush();
     meshtastic_NodeInfoLite *info = getOrCreateMeshNode(getNodeNum());
     info->user = TypeConversions::ConvertToUserLite(owner);
     info->has_user = true;
+    Serial.println("DEBUG: After getOrCreateMeshNode()");
+    Serial.flush();
 
     // If node database has not been saved for the first time, save it now
 #ifdef FSCom
+    Serial.println("DEBUG: Before FSCom.exists check");
+    Serial.flush();
     if (!FSCom.exists(nodeDatabaseFileName)) {
+        Serial.println("DEBUG: Saving node database to disk");
+        Serial.flush();
         saveNodeDatabaseToDisk();
+        Serial.println("DEBUG: After saveNodeDatabaseToDisk()");
+        Serial.flush();
     }
 #endif
 
 #ifdef ARCH_ESP32
+    Serial.println("DEBUG: Before preferences.begin()");
+    Serial.flush();
     Preferences preferences;
     preferences.begin("meshtastic", false);
+    Serial.println("DEBUG: After preferences.begin()");
+    Serial.flush();
     myNodeInfo.reboot_count = preferences.getUInt("rebootCounter", 0);
     preferences.end();
     LOG_DEBUG("Number of Device Reboots: %d", myNodeInfo.reboot_count);
+    Serial.println("DEBUG: After preferences section");
+    Serial.flush();
 #endif
 
-    resetRadioConfig(); // If bogus settings got saved, then fix them
+    Serial.println("DEBUG: Before resetRadioConfig()");
+    Serial.flush();
+    resetRadioConfig();
+    Serial.println("DEBUG: After resetRadioConfig()");
+    Serial.flush(); // If bogus settings got saved, then fix them
     // nodeDB->LOG_DEBUG("region=%d, NODENUM=0x%x, dbsize=%d", config.lora.region, myNodeInfo.my_node_num, numMeshNodes);
 
     // Uncomment below to always enable UDP broadcasts
@@ -386,7 +437,11 @@ NodeDB::NodeDB()
 #endif
     }
 #endif
+    Serial.println("DEBUG: Before saveToDisk()");
+    Serial.flush();
     saveToDisk(saveWhat);
+    Serial.println("DEBUG: NodeDB constructor COMPLETE");
+    Serial.flush();
 }
 
 /**
