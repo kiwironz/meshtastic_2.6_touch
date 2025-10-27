@@ -38,4 +38,4 @@ release/
 /compile_commands.json
 src/mesh/raspihttp/certificate.pem
 src/mesh/raspihttp/private_key.pem
-static.backup_webui/
+webui_backup/
