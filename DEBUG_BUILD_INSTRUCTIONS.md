@@ -2,7 +2,7 @@
 
 ## What We're Testing
 
-I've added comprehensive debug logging throughout the NodeDB constructor to pinpoint exactly where the firmware hangs during boot. The debug statements use `Serial.println()` and `Serial.flush()` for immediate output.
+I've added comprehensive debug logging throughout the NodeDB constructor to pinpoint exactly where the firmware hangs during boot. The debug statements use `LOG_INFO()` which outputs to the ESP32 logging system (same format as the vfs_api.cpp errors you're already seeing).
 
 ## Build and Upload Instructions
 
@@ -26,38 +26,29 @@ I've added comprehensive debug logging throughout the NodeDB constructor to pinp
 
 ## What to Look For
 
-The debug output will show messages like:
+The debug output will show messages in the ESP32 logging format (same as the errors you're already seeing):
 
 ```
-DEBUG: main.cpp - Before new NodeDB
-DEBUG: NodeDB constructor START
-DEBUG: Before loadFromDisk()
-DEBUG: After loadFromDisk()
-DEBUG: After cleanupMeshDB()
-DEBUG: Before get device unique id
-DEBUG: ESP32-S3 - Before eFuse read
-DEBUG: ESP32-S3 - After eFuse read
-DEBUG: eFuse read SUCCESS
-DEBUG: Before pickNewNodeNum()
-DEBUG: After pickNewNodeNum()
-DEBUG: Before PKI section
-DEBUG: PKI section - checking license and region
-DEBUG: PKI - generating/regenerating keys
-DEBUG: After PKI section
-DEBUG: Before getOrCreateMeshNode()
-DEBUG: After getOrCreateMeshNode()
-DEBUG: Before FSCom.exists check
-DEBUG: Before preferences.begin()
-DEBUG: After preferences.begin()
-DEBUG: After preferences section
-DEBUG: Before resetRadioConfig()
-DEBUG: After resetRadioConfig()
-DEBUG: Before saveToDisk()
-DEBUG: NodeDB constructor COMPLETE
-DEBUG: main.cpp - After new NodeDB
+[   245][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[  5677][E][vfs_api.cpp:105] open(): /littlefs/prefs/db.proto does not exist, no permits for creation
+[  5742][I][NodeDB.cpp:196] NodeDB(): DEBUG: NodeDB constructor START
+[  5743][I][NodeDB.cpp:197] NodeDB(): Init NodeDB
+[  5744][I][NodeDB.cpp:198] NodeDB(): DEBUG: Before loadFromDisk()
+[  5750][I][NodeDB.cpp:200] NodeDB(): DEBUG: After loadFromDisk()
+[  5751][I][NodeDB.cpp:202] NodeDB(): DEBUG: After cleanupMeshDB()
+[  5752][I][NodeDB.cpp:210] NodeDB(): DEBUG: Before get device unique id
+[  5753][I][NodeDB.cpp:213] NodeDB(): DEBUG: ESP32-S3 - Before eFuse read
+[  5754][I][NodeDB.cpp:218] NodeDB(): DEBUG: ESP32-S3 - After eFuse read
+[  5755][I][NodeDB.cpp:222] NodeDB(): DEBUG: eFuse read SUCCESS
+[  5756][I][NodeDB.cpp:256] NodeDB(): DEBUG: Before pickNewNodeNum()
+[  5800][I][NodeDB.cpp:258] NodeDB(): DEBUG: After pickNewNodeNum()
+[  5801][I][NodeDB.cpp:274] NodeDB(): DEBUG: Before PKI section
+... and so on
 ```
 
 **The last debug message you see before the hang tells us exactly where the firmware is stopping.**
+
+The timestamps (in milliseconds) will help us see if there's a long delay between steps.
 
 ## Expected Results
 
@@ -89,7 +80,7 @@ This will tell us exactly which function is causing the hang.
 
 ## Clean Up After Debugging
 
-Once we identify the hang location and fix it, we can remove all the debug statements by reverting these changes or by searching for lines containing `Serial.println("DEBUG:` and removing them.
+Once we identify the hang location and fix it, we can remove all the debug statements by reverting these changes or by searching for lines containing `LOG_INFO("DEBUG:` and removing them.
 
 ## Previous Findings
 

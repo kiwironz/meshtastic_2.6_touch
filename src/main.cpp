@@ -765,11 +765,9 @@ void setup()
 
     // We do this as early as possible because this loads preferences from flash
     // but we need to do this after main cpu init (esp32setup), because we need the random seed set
-    Serial.println("DEBUG: main.cpp - Before new NodeDB");
-    Serial.flush();
+    LOG_INFO("DEBUG: main.cpp - Before new NodeDB");
     nodeDB = new NodeDB;
-    Serial.println("DEBUG: main.cpp - After new NodeDB");
-    Serial.flush();
+    LOG_INFO("DEBUG: main.cpp - After new NodeDB");
 
     // If we're taking on the repeater role, use NextHopRouter and turn off 3V3_S rail because peripherals are not needed
     if (config.device.role == meshtastic_Config_DeviceConfig_Role_REPEATER) {
