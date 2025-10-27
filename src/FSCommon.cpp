@@ -11,6 +11,7 @@
 #include "FSCommon.h"
 #include "SPILock.h"
 #include "configuration.h"
+#include <Arduino.h>
 
 // Software SPI is used by MUI so disable SD card here until it's also implemented
 #if defined(HAS_SDCARD) && !defined(SDCARD_USE_SOFT_SPI)
@@ -290,8 +291,7 @@ void fsInit()
     concurrency::LockGuard g(spiLock);
     preFSBegin();
     if (!FSBegin()) {
-        LOG_ERROR("Filesystem mount failed");
-        // assert(0); This auto-formats the partition, so no need to fail here.
+        // mounting failed; do not assert here (would auto-format partition)
     }
 #if defined(ARCH_ESP32)
     LOG_DEBUG("Filesystem files (%d/%d Bytes):", FSCom.usedBytes(), FSCom.totalBytes());
@@ -311,28 +311,28 @@ void setupSDCard()
     concurrency::LockGuard g(spiLock);
     SDHandler.begin(SPI_SCK, SPI_MISO, SPI_MOSI);
     if (!SD.begin(SDCARD_CS, SDHandler, SD_SPI_FREQUENCY)) {
-        LOG_DEBUG("No SD_MMC card detected");
+        LOG_INFO("No SD_MMC card detected");
         return;
     }
     uint8_t cardType = SD.cardType();
     if (cardType == CARD_NONE) {
-        LOG_DEBUG("No SD_MMC card attached");
+        LOG_INFO("No SD_MMC card attached");
         return;
     }
-    LOG_DEBUG("SD_MMC Card Type: ");
+    LOG_INFO("SD_MMC Card Type: ");
     if (cardType == CARD_MMC) {
-        LOG_DEBUG("MMC");
+        LOG_INFO("MMC");
     } else if (cardType == CARD_SD) {
-        LOG_DEBUG("SDSC");
+        LOG_INFO("SDSC");
     } else if (cardType == CARD_SDHC) {
-        LOG_DEBUG("SDHC");
+        LOG_INFO("SDHC");
     } else {
-        LOG_DEBUG("UNKNOWN");
+        LOG_INFO("UNKNOWN");
     }
 
     uint64_t cardSize = SD.cardSize() / (1024 * 1024);
-    LOG_DEBUG("SD Card Size: %lu MB", (uint32_t)cardSize);
-    LOG_DEBUG("Total space: %lu MB", (uint32_t)(SD.totalBytes() / (1024 * 1024)));
-    LOG_DEBUG("Used space: %lu MB", (uint32_t)(SD.usedBytes() / (1024 * 1024)));
+    LOG_INFO("SD Card Size: %lu MB", (uint32_t)cardSize);
+    LOG_INFO("Total space: %lu MB", (uint32_t)(SD.totalBytes() / (1024 * 1024)));
+    LOG_INFO("Used space: %lu MB", (uint32_t)(SD.usedBytes() / (1024 * 1024)));
 #endif
 }

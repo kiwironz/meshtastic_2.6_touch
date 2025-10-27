@@ -1,0 +1,2053 @@
+[!p[?3;4l[4l>[0m(B[?1h=[H[2J[0m(B[7m[36;1H[K[?12l[?25h[?25l                                                                                                                                                                    [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.9 | VT102 | Offline | ttyACM0                                                                                      [36;160H[?12l[?25h[1;1H
+[0m(BWelcome to minicom 2.9
+
+OPTIONS: I18n 
+Port /dev/ttyACM0, 10:52:08
+
+Press CTRL-A Z for help on special keys
+
+SP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cdb0a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cdb0a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cdb0a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP:0xee[1;35r[35;1H
+[1;36r[35;1Hmode:DIO, clock div:1[1;35r[35;1H
+[1;36r[35;1Hload:0x3fce3808,len:0x4bc[1;35r[35;1H
+[1;36r[35;1Hload:0x403c9700,len:0xbd8[1;35r[35;1H
+[1;36r[35;1Hload:0x403cc700,len:0x2a0c[1;35r[35;1H
+[1;36r[35;1Hentry 0x403c98d0[1;35r[35;1H
+[1;36r[35;1HESP-ROM:esp32s3-20210327[1;35r[35;1H
+[1;36r[35;1HBuild:Mar 27 2021[1;35r[35;1H
+[1;36r[35;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)[1;35r[35;1H
+[1;36r[35;1HSaved PC:0x403cdb0a[1;35r[35;1H
+[1;36r[35;1HSPIWP[2;48H[?25l+-------------------------------------------------------------------+[3;48H|                      Minicom Command Summary                      |[4;48H|                                                                   |[5;48H|              Commands can be called by CTRL-A <key>               |[6;48H|                                                                   |[7;48H|               Main Functions                  Other Functions     |[8;48H|                                                                   |[9;48H| Dialing directory..D  run script (Go)....G | Clear Screen.......C |[10;48H| Send files.........S  Receive files......R | cOnfigure Minicom..O |[11;48H| comm Parameters....P  Add linefeed.......A | Suspend minicom....J |[12;48H| Capture on/off.....L  Hangup.............H | eXit and reset.....X |[13;48H| send break.........F  initialize Modem...M | Quit with no reset.Q |[14;48H| Terminal settings..T  run Kermit.........K | Cursor key mode....I |[15;48H| lineWrap on/off....W  local Echo on/off..E | Help screen........Z |[16;48H| Paste file.........Y  Timestamp toggle...N | scroll Back........B |[17;48H| Add Carriage Ret...U                                              |[18;48H|                                                                   |[19;48H|             Select function or press Enter for none.              |[20;48H+-------------------------------------------------------------------+[19;102H[?12l[?25h[?12l[?25h[2;1HBuild:Mar 27 2021                                                                                                   [3;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)                                                             [4;1HSaved PC:0x403cdb0a                                                                                                 [5;1HSPIWP:0xee                                                                                                          [6;1Hmode:DIO, clock div:1                                                                                               [7;1Hload:0x3fce3808,len:0x4bc                                                                                           [8;1Hload:0x403c9700,len:0xbd8                                                                                           [9;1Hload:0x403cc700,len:0x2a0c                                                                                          [10;1Hentry 0x403c98d0                                                                                                    [11;1HESP-ROM:esp32s3-20210327                                                                                            [12;1HBuild:Mar 27 2021                                                                                                   [13;1Hrst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)                                                             [14;1HSaved PC:0x403cdb0a                                                                                                 [15;1HSPIWP:0xee                                                                                                          [16;1Hmode:DIO, clock div:1                                                                                               [17;1Hload:0x3fce3808,len:0x4bc                                                                                           [18;1Hload:0x403c9700,len:0xbd8                                                                                           [19;1Hload:0x403cc700,len:0x2a0c                                                                                          [20;1Hentry 0x403c98d0                                                                                                    [35;6H[8;72H[?25l+----------------------+[9;72H|    Leave Minicom?    |[10;72H|               No     |[11;72H+----------------------+[10;93H[?25l[10;75H[0m(B[7m   Yes  [?12l[?25h[8;1H[0m(Bload:0x403c9700,len:0xbd8                                                                      [9;1Hload:0x403cc700,len:0x2a0c                                                                     [10;1Hentry 0x403c98d0                                                                               [11;1HESP-ROM:esp32s3-20210327                                                                       [35;6H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>

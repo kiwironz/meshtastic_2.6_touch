@@ -1,0 +1,123 @@
+; ===========================================
+; EEL ESP32-S3 Touch Board Configuration for Meshtastic 2.6.11
+; ===========================================
+
+[env:eel_esp32s3_touch]
+extends = esp32s3_base
+board = eel_esp32s3_touch
+
+; board_build.partitions = variants/eel_esp32s3_touch/eel_16MB_ota_spiffs.csv
+board_build.partitions = default_16MB.csv
+
+board_build.psram_type = opi
+board_build.arduino.memory_type = qio_opi
+board_build.flash_mode = qio
+board_upload.flash_size = 16MB
+
+; Ensure PSRAM flag is kept (board has PSRAM).
+; Disable LTO for this variant to avoid linker plugin errors with prebuilt LTO objects.
+build_unflags =
+    -flto
+
+upload_protocol = esptool
+monitor_speed = 115200
+upload_port = /dev/ttyACM0
+upload_flags = 
+    --before
+    no_reset
+
+build_flags = 
+    ${esp32s3_base.build_flags}
+    -D PRIVATE_HW
+    -I variants/eel_esp32s3_touch
+    -I variants/eel_esp32s3_touch/generated/ui_320x240
+    -mfix-esp32-psram-cache-issue
+    
+    ; Board identification
+    -D HW_VENDOR=meshtastic_HardwareModel_PRIVATE_HW
+    -D EEL_ESP32S3_TOUCH
+    
+    ; USB CDC
+    -D ARDUINO_USB_CDC_ON_BOOT=1
+    ; -D ARDUINO_USB_MODE=1
+    
+    ; Display configuration - New LVGL UI
+    -D VARIANT_HAS_SCREEN
+    -D USE_LVGL
+    -D LV_LVGL_H_INCLUDE_SIMPLE
+    -D HAS_TOUCHSCREEN=0
+    -D HAS_GPS=0
+
+    ; LGFX
+    -D USE_LGFX
+    -D LGFX_DRIVER_TEMPLATE
+    -D LGFX_DRIVER=LGFX_GENERIC
+    -D LGFX_PANEL=ST7789
+    -D LGFX_PIN_SCK=2
+    -D LGFX_PIN_MOSI=3
+    -D LGFX_PIN_MISO=4
+    -D LGFX_PIN_DC=1
+    -D LGFX_PIN_CS=16
+    -D LGFX_PIN_RST=12
+    -D LGFX_PIN_BL=15
+    -D LGFX_SCREEN_WIDTH=320
+    -D LGFX_SCREEN_HEIGHT=240
+    -D LGFX_ROTATION=1
+    -D LGFX_INVERT_COLOR=true
+    -D TFT_BACKLIGHT_ON=HIGH
+    -D SPI_FREQUENCY=40000000
+    -D SPI_READ_FREQUENCY=16000000
+    
+    ; Radio
+    -D USE_SX1262
+    -D SX126X_DIO3_TCXO_VOLTAGE=1.8
+    
+    ; Exclusions
+    -D MESHTASTIC_EXCLUDE_WIFI=1
+    -D MESHTASTIC_EXCLUDE_WEBSERVER=1
+    -D MESHTASTIC_EXCLUDE_MQTT=1
+    -D MESHTASTIC_EXCLUDE_ENVIRONMENTAL_SENSOR=1
+    -D MESHTASTIC_EXCLUDE_POWER_TELEMETRY=1
+    -D MESHTASTIC_EXCLUDE_AUDIO=1
+    -D MESHTASTIC_EXCLUDE_RTTTL=1
+      
+    ; Other
+    -D NEOPIXEL_DATA=13
+    -D BUTTON_PIN=18
+    -D RAM_SIZE=5120
+
+lib_deps =
+    ${esp32s3_base.lib_deps}
+    lovyan03/LovyanGFX@^1.1.16
+    ${device-ui_base.lib_deps}
+
+build_src_filter =
+    ${esp32s3_base.build_src_filter}
+
+
+; Quick test environment: disable PSRAM and display to check if bootloop is caused by
+; PSRAM/display init. This does not modify the main env; it's only for local testing.
+[env:eel_esp32s3_touch_nopsram]
+extends = eel_esp32s3_touch
+board = eel_esp32s3_touch
+
+; Disable PSRAM for this test build
+board_build.psram_type = none
+; Ensure Arduino memory type isn't set to an OPI variant that implies PSRAM
+board_build.arduino.memory_type = qspi
+
+; Disable display/UI-heavy features and reduce RAM_SIZE to avoid PSRAM assumptions
+; This prevents large static allocations that assume PSRAM is present.
+build_flags = 
+    ${esp32s3_base.build_flags}
+    -D PRIVATE_HW
+    -I variants/eel_esp32s3_touch
+    -D RAM_SIZE=512
+    -D MESHTASTIC_EXCLUDE_WEBSERVER=1
+    -D VARIANT_NO_DISPLAY_TEST
+
+lib_deps =
+    ${esp32s3_base.lib_deps}
+    ${device-ui_base.lib_deps}
+
+

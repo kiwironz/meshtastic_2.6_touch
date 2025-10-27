@@ -1,0 +1,73 @@
+; ===========================================
+; EEL ESP32-S3 Touch Board Configuration
+; Custom board with ESP32-S3-WROOM-1-N16R8
+; 2.8" ST7789 TFT (240x320 physical, landscape 320x240)
+; Stage 2a: Display only (no touch yet)
+; NiceRF LORA1262 Radio (SX1262)
+; ===========================================
+
+[env:eel_esp32s3_touch]
+extends = esp32s3_base
+board = esp32s3box
+framework = arduino
+
+board_build.partitions = default_16MB.csv
+
+upload_protocol = esptool
+monitor_speed = 115200
+upload_port = /dev/ttyACM0
+upload_flags = 
+    --before
+    no_reset
+
+build_flags = 
+    ${esp32s3_base.build_flags}
+    -D PRIVATE_HW
+    -I variants/eel_esp32s3_touch
+    
+    ; Board identification
+    -D HW_VENDOR=meshtastic_HardwareModel_PRIVATE_HW
+    -D EEL_ESP32S3_TOUCH
+    
+    ; USB CDC
+    -D ARDUINO_USB_CDC_ON_BOOT=1
+    -D ARDUINO_USB_MODE=1
+    
+    ; Display configuration - BaseUI with TFT
+    -D HAS_SCREEN=1
+    -D HAS_TFT=1
+    -D USE_ST7789
+    -D TFT_WIDTH=320
+    -D TFT_HEIGHT=240
+    -D HAS_TOUCHSCREEN=0
+    -D HAS_GPS=0
+    
+    ; Radio - SX1262 with TCXO
+    -D USE_SX1262
+    -D SX126X_DIO3_TCXO_VOLTAGE=1.8
+    
+    ; I2C (required by firmware architecture)
+    -D I2C_SDA=19
+    -D I2C_SCL=20
+    
+    ; Exclusions for minimal build
+    -D MESHTASTIC_EXCLUDE_WIFI=1
+    -D MESHTASTIC_EXCLUDE_WEBSERVER=1
+    -D MESHTASTIC_EXCLUDE_MQTT=1
+    -D MESHTASTIC_EXCLUDE_ENVIRONMENTAL_SENSOR=1
+    -D MESHTASTIC_EXCLUDE_POWER_TELEMETRY=1
+    -D MESHTASTIC_EXCLUDE_AUDIO=1
+    -D MESHTASTIC_EXCLUDE_RTTTL=1
+    -D MESHTASTIC_EXCLUDE_ACCELEROMETER=1
+      
+    ; Other peripherals
+    -D NEOPIXEL_DATA=13
+    -D BUTTON_PIN=18
+    -D RAM_SIZE=5120
+
+lib_deps=
+    ${esp32s3_base.lib_deps}
+    lovyan03/LovyanGFX@^1.1.16
+
+build_src_filter =
+    ${esp32s3_base.build_src_filter}

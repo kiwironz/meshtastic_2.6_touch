@@ -1,0 +1,127 @@
+Processing eel_esp32s3_touch (board: eel_esp32s3_touch; platform: 
+platformio/espressif32@6.11.0; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/eel_esp32s3_touch.html
+PLATFORM: Espressif 32 (6.11.0) > ESP32-S3 WROOM-1 N16R8 (16 MB FLASH, 8 MB PSRAM)
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 16MB Flash
+DEBUG: Current (esp-builtin) On-board (esp-builtin) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20017.241212+sha.dcc1105b 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - tool-mklittlefs @ 1.203.210628 (2.3) 
+ - tool-openocd-esp32 @ 2.1100.20220706 (11.0) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5 
+ - toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+[nanopb] No generation needed.
+Found 96 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- ESP8266 and ESP32 OLED driver for SSD1306 displays @ 4.4.1
+|-- OneButton @ 2.6.1
+|-- arduino-fsm @ 2.2.0
+|-- TinyGPSPlus @ 1.0.3
+|-- ArduinoThread @ 0.0.0+20251026151449
+|-- Nanopb @ 0.4.91
+|-- ErriezCRC32 @ 1.0.1
+|-- NonBlockingRTTTL @ 1.3.0
+|-- TBPubSubClient @ 2.12.1
+|-- NTPClient @ 3.2.1
+|-- Syslog @ 2.0.0
+|-- Adafruit BusIO @ 1.17.1
+|-- Adafruit Unified Sensor @ 1.1.15
+|-- Adafruit BMP280 Library @ 2.6.8
+|-- Adafruit BMP085 Library @ 1.2.4
+|-- Adafruit BME280 Library @ 2.3.0
+|-- Adafruit DPS310 @ 1.1.5
+|-- Adafruit MCP9808 Library @ 2.0.2
+|-- Adafruit INA260 Library @ 1.5.2
+|-- Adafruit INA219 @ 1.2.3
+|-- Adafruit PM25 AQI Sensor @ 2.0.0
+|-- Adafruit MPU6050 @ 2.2.6
+|-- Adafruit LIS3DH @ 1.3.0
+|-- Adafruit AHTX0 @ 2.0.5
+|-- Adafruit LSM6DS @ 4.7.4
+|-- Adafruit TSL2591 Library @ 1.4.5
+|-- EmotiBit MLX90632 @ 1.0.8
+|-- Adafruit MLX90614 Library @ 2.1.5
+|-- INA3221 @ 1.0.1
+|-- QMC5883LCompass @ 1.2.3
+|-- DFRobot_RTU @ 1.0.3
+|-- DFRobot_RainfallSensor @ 1.0.0
+|-- INA226 @ 0.6.4
+|-- SparkFun MAX3010x Pulse and Proximity Sensor Library @ 1.1.2
+|-- SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library @ 1.3.2
+|-- Adafruit LTR390 Library @ 1.1.2
+|-- Adafruit PCT2075 @ 1.0.5
+|-- Adafruit BMP3XX Library @ 2.1.6
+|-- Adafruit MAX1704X @ 1.0.3
+|-- Adafruit SHTC3 Library @ 1.0.1
+|-- Adafruit LPS2X @ 2.0.6
+|-- Adafruit SHT31 Library @ 2.2.2
+|-- Adafruit VEML7700 Library @ 2.1.6
+|-- Adafruit SHT4x Library @ 1.0.5
+|-- SparkFun Qwiic Scale NAU7802 Arduino Library @ 1.0.6
+|-- ClosedCube OPT3001 @ 1.1.2
+|-- bsec2 @ 1.10.2610
+|-- BME68x Sensor library @ 1.3.40408
+|-- DFRobot_LarkWeatherStation @ 1.0.0
+|-- RadioLib @ 7.1.2
+|-- esp32_https_server @ 1.0.0
+|-- NimBLE-Arduino @ 1.4.3
+|-- libpax @ 1.1.0
+|-- XPowersLib @ 0.2.9
+|-- ESP32 Codec2 @ 1.0.1
+|-- Crypto @ 0.4.0
+|-- meshtastic-device-ui @ 1.0.0
+|-- LovyanGFX @ 1.2.7
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- WiFi @ 2.0.0
+|-- Wire @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- HTTPClient @ 2.0.0
+|-- WiFiClientSecure @ 2.0.0
+|-- WebServer @ 2.0.0
+|-- ESPmDNS @ 2.0.0
+|-- LittleFS @ 2.0.0
+|-- ESP32 Async UDP @ 2.0.0
+|-- Adafruit NeoPixel @ 1.15.2
+Building in release mode
+Using meshtastic platformio-custom.py, firmware version 2.6.11.60ec05e53 on eel_esp32s3_touch
+Using flags:
+-DAPP_VERSION=2.6.11.60ec05e53
+-DAPP_VERSION_SHORT=2.6.11
+-DAPP_ENV=eel_esp32s3_touch
+-DUSERPREFS_TZ_STRING=\"tzplaceholder                                         \"
+Building FS image from 'data' directory to /tmp/meshtastic_build/eel_esp32s3_touch/littlefs.bin
+/static/Logo_Black.svg.gz
+/static/Logo_White.svg.gz
+/static/static
+/static/icon.svg.gz
+/static/apple-touch-icon.png
+/static/favicon.ico
+/static/icon.svg
+/static/index-b9vwykds.js
+/static/index.html
+/static/index-wV0rbIjU.css
+/static/Logo_Black.svg
+/static/Logo_White.svg
+/static/mapbox-gl-DY02hNYD.js
+/static/maplibre-gl-H6mDd47p.js
+/static/robots.txt
+/static/site.webmanifest
+/boot/logo.png
+/prefs/db.proto
+/prefs/config.proto
+/prefs/module.proto
+/prefs/uiconfig.proto
+/prefs/channels.proto
+========================= [SUCCESS] Took 81.19 seconds =========================
+
+Environment        Status    Duration
+-----------------  --------  ------------
+eel_esp32s3_touch  SUCCESS   00:01:21.189
+========================= 1 succeeded in 00:01:21.189 =========================
