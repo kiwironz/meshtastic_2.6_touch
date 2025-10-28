@@ -102,6 +102,20 @@ void enableSlowCLK()
 
 void esp32Setup()
 {
+    LOG_INFO("DEBUG: esp32Setup() START");
+
+    // Initialize NVS (Non-Volatile Storage) - MUST be done before using Preferences
+    LOG_INFO("DEBUG: Initializing NVS");
+    esp_err_t err = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        // NVS partition was truncated and needs to be erased
+        LOG_WARN("NVS partition needs erase, erasing...");
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
+    LOG_INFO("DEBUG: NVS initialized successfully");
+
     /* We explicitly don't want to do call randomSeed,
     // as that triggers the esp32 core to use a less secure pseudorandom function.
     uint32_t seed = esp_random();
