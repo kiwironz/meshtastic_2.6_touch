@@ -15,7 +15,7 @@ class LGFX_EEL_ESP32S3 : public lgfx::LGFX_Device
     // lgfx::Touch_XPT2046 _touch_instance;
 
 public:
-    LGFX(void)
+    LGFX_EEL_ESP32S3(void)
     {
         // ========================================
         // Configure SPI bus for display (SPI3)
