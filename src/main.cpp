@@ -1290,15 +1290,20 @@ void setup()
     PowerFSM_setup(); // we will transition to ON in a couple of seconds, FIXME, only do this for cold boots, not waking from SDS
     powerFSMthread = new PowerFSMThread();
 
-    LOG_INFO("DEBUG: After PowerFSMthread, before setCPUFast");
+    Serial.println("SERIAL DEBUG: After PowerFSMthread, before setCPUFast");
+    Serial.flush();
+    LOG_DEBUG("After PowerFSMthread, before setCPUFast");
 
 #if !HAS_TFT
-    LOG_INFO("DEBUG: About to call setCPUFast(false)");
+    Serial.println("SERIAL DEBUG: About to call setCPUFast(false)");
+    Serial.flush();
     setCPUFast(false); // 80MHz is fine for our slow peripherals
-    LOG_INFO("DEBUG: setCPUFast(false) returned successfully");
+    Serial.println("SERIAL DEBUG: setCPUFast(false) returned successfully");
+    Serial.flush();
 #endif
 
-    LOG_INFO("DEBUG: After setCPUFast, before heap logs");
+    Serial.println("SERIAL DEBUG: After setCPUFast, before heap logs");
+    Serial.flush();
 
 #ifdef ARDUINO_ARCH_ESP32
     LOG_DEBUG("Free heap  : %7d bytes", ESP.getFreeHeap());
