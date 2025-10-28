@@ -1290,8 +1290,12 @@ void setup()
     PowerFSM_setup(); // we will transition to ON in a couple of seconds, FIXME, only do this for cold boots, not waking from SDS
     powerFSMthread = new PowerFSMThread();
 
+    LOG_INFO("DEBUG: After PowerFSMthread, before setCPUFast");
+
 #if !HAS_TFT
+    LOG_INFO("DEBUG: About to call setCPUFast(false)");
     setCPUFast(false); // 80MHz is fine for our slow peripherals
+    LOG_INFO("DEBUG: setCPUFast(false) returned successfully");
 #endif
 
     LOG_INFO("DEBUG: After setCPUFast, before heap logs");
