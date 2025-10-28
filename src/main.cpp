@@ -1294,10 +1294,14 @@ void setup()
     setCPUFast(false); // 80MHz is fine for our slow peripherals
 #endif
 
+    LOG_INFO("DEBUG: After setCPUFast, before heap logs");
+
 #ifdef ARDUINO_ARCH_ESP32
     LOG_DEBUG("Free heap  : %7d bytes", ESP.getFreeHeap());
     LOG_DEBUG("Free PSRAM : %7d bytes", ESP.getFreePsram());
 #endif
+
+    LOG_INFO("DEBUG: setup() COMPLETE - about to enter loop()");
 }
 
 #endif
@@ -1385,6 +1389,12 @@ void scannerToSensorsMap(const std::unique_ptr<ScanI2CTwoWire> &i2cScanner, Scan
 #ifndef PIO_UNIT_TESTING
 void loop()
 {
+    static bool firstLoop = true;
+    if (firstLoop) {
+        LOG_INFO("DEBUG: loop() STARTED - first iteration");
+        firstLoop = false;
+    }
+
     runASAP = false;
 
 #ifdef ARCH_ESP32
