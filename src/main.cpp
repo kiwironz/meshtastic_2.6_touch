@@ -753,6 +753,8 @@ void setup()
 
 #ifdef ARCH_ESP32
     esp32Setup();
+    Serial.println("SERIAL DEBUG: After esp32Setup()");
+    Serial.flush();
 #endif
 
 #ifdef ARCH_NRF52
@@ -765,7 +767,11 @@ void setup()
 
     // We do this as early as possible because this loads preferences from flash
     // but we need to do this after main cpu init (esp32setup), because we need the random seed set
+    Serial.println("SERIAL DEBUG: Before new NodeDB");
+    Serial.flush();
     nodeDB = new NodeDB;
+    Serial.println("SERIAL DEBUG: After new NodeDB");
+    Serial.flush();
 
     // If we're taking on the repeater role, use NextHopRouter and turn off 3V3_S rail because peripherals are not needed
     if (config.device.role == meshtastic_Config_DeviceConfig_Role_REPEATER) {
@@ -1287,8 +1293,14 @@ void setup()
     }
 
     // This must be _after_ service.init because we need our preferences loaded from flash to have proper timeout values
+    Serial.println("SERIAL DEBUG: Before PowerFSM_setup()");
+    Serial.flush();
     PowerFSM_setup(); // we will transition to ON in a couple of seconds, FIXME, only do this for cold boots, not waking from SDS
+    Serial.println("SERIAL DEBUG: After PowerFSM_setup(), before new PowerFSMThread()");
+    Serial.flush();
     powerFSMthread = new PowerFSMThread();
+    Serial.println("SERIAL DEBUG: After new PowerFSMThread()");
+    Serial.flush();
 
     Serial.println("SERIAL DEBUG: After PowerFSMthread, before setCPUFast");
     Serial.flush();
