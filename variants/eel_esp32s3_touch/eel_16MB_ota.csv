@@ -1,7 +1,0 @@
-## Explicit 16MB partition table (aligned to 0x10000) with LittleFS
-# Name,   Type, SubType, Offset,      Size, Flags
-nvs,      data, nvs,     0x00009000, 0x00006000
-otadata,  data, ota,     0x0000F000, 0x00002000
-app0,     app,  ota_0,   0x00020000, 0x001C0000
-app1,     app,  ota_1,   0x001E0000, 0x001C0000
-littlefs, data, 0x82,    0x003A0000, 0x009E0000
