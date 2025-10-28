@@ -193,13 +193,9 @@ static uint8_t ourMacAddr[6];
 
 NodeDB::NodeDB()
 {
-    LOG_INFO("DEBUG: NodeDB constructor START");
     LOG_INFO("Init NodeDB");
-    LOG_INFO("DEBUG: Before loadFromDisk()");
     loadFromDisk();
-    LOG_INFO("DEBUG: After loadFromDisk()");
     cleanupMeshDB();
-    LOG_INFO("DEBUG: After cleanupMeshDB()");
 
     uint32_t devicestateCRC = crc32Buffer(&devicestate, sizeof(devicestate));
     uint32_t nodeDatabaseCRC = crc32Buffer(&nodeDatabase, sizeof(nodeDatabase));
@@ -207,22 +203,17 @@ NodeDB::NodeDB()
     uint32_t channelFileCRC = crc32Buffer(&channelFile, sizeof(channelFile));
 
     int saveWhat = 0;
-    LOG_INFO("DEBUG: Before get device unique id");
     // Get device unique id
 #if defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32S3)
-    LOG_INFO("DEBUG: ESP32-S3 - Before eFuse read");
     uint32_t unique_id[4];
     // ESP32 factory burns a unique id in efuse for S2+ series and evidently C3+ series
     // This is used for HMACs in the esp-rainmaker AIOT platform and seems to be a good choice for us
     esp_err_t err = esp_efuse_read_field_blob(ESP_EFUSE_OPTIONAL_UNIQUE_ID, unique_id, sizeof(unique_id) * 8);
-    LOG_INFO("DEBUG: ESP32-S3 - After eFuse read");
     if (err == ESP_OK) {
         memcpy(myNodeInfo.device_id.bytes, unique_id, sizeof(unique_id));
         myNodeInfo.device_id.size = 16;
-        LOG_INFO("DEBUG: eFuse read SUCCESS");
     } else {
         LOG_WARN("Failed to read unique id from efuse");
-        LOG_INFO("DEBUG: eFuse read FAILED");
     }
 #elif defined(ARCH_NRF52)
     // Nordic applies a FIPS compliant Random ID to each chip at the factory
@@ -253,9 +244,7 @@ NodeDB::NodeDB()
     myNodeInfo.min_app_version = 30200; // format is Mmmss (where M is 1+the numeric major number. i.e. 30200 means 2.2.00
     // Note! We do this after loading saved settings, so that if somehow an invalid nodenum was stored in preferences we won't
     // keep using that nodenum forever. Crummy guess at our nodenum (but we will check against the nodedb to avoid conflicts)
-    LOG_INFO("DEBUG: Before pickNewNodeNum()");
     pickNewNodeNum();
-    LOG_INFO("DEBUG: After pickNewNodeNum()");
 
     // Set our board type so we can share it with others
     owner.hw_model = HW_VENDOR;
@@ -271,13 +260,10 @@ NodeDB::NodeDB()
         config.security.is_managed = config.device.is_managed;
     }
 
-    LOG_INFO("DEBUG: Before PKI section");
 
 #if !(MESHTASTIC_EXCLUDE_PKI_KEYGEN || MESHTASTIC_EXCLUDE_PKI)
 
-    LOG_INFO("DEBUG: PKI section - checking license and region");
     if (!owner.is_licensed && config.lora.region != meshtastic_Config_LoRaConfig_RegionCode_UNSET) {
-        LOG_INFO("DEBUG: PKI - generating/regenerating keys");
         bool keygenSuccess = false;
         if (config.security.private_key.size == 32) {
             if (crypto->regeneratePublicKey(config.security.public_key.bytes, config.security.private_key.bytes)) {
@@ -308,38 +294,27 @@ NodeDB::NodeDB()
     if (keyIsLowEntropy) {
         LOG_WARN(LOW_ENTROPY_WARNING);
     }
-    LOG_INFO("DEBUG: After PKI section");
     // Include our owner in the node db under our nodenum
-    LOG_INFO("DEBUG: Before getOrCreateMeshNode()");
     meshtastic_NodeInfoLite *info = getOrCreateMeshNode(getNodeNum());
     info->user = TypeConversions::ConvertToUserLite(owner);
     info->has_user = true;
-    LOG_INFO("DEBUG: After getOrCreateMeshNode()");
 
     // If node database has not been saved for the first time, save it now
 #ifdef FSCom
-    LOG_INFO("DEBUG: Before FSCom.exists check");
     if (!FSCom.exists(nodeDatabaseFileName)) {
-        LOG_INFO("DEBUG: Saving node database to disk");
         saveNodeDatabaseToDisk();
-        LOG_INFO("DEBUG: After saveNodeDatabaseToDisk()");
     }
 #endif
 
 #ifdef ARCH_ESP32
-    LOG_INFO("DEBUG: Before preferences.begin()");
     Preferences preferences;
     preferences.begin("meshtastic", false);
-    LOG_INFO("DEBUG: After preferences.begin()");
     myNodeInfo.reboot_count = preferences.getUInt("rebootCounter", 0);
     preferences.end();
     LOG_DEBUG("Number of Device Reboots: %d", myNodeInfo.reboot_count);
-    LOG_INFO("DEBUG: After preferences section");
 #endif
 
-    LOG_INFO("DEBUG: Before resetRadioConfig()");
     resetRadioConfig();
-    LOG_INFO("DEBUG: After resetRadioConfig()"); // If bogus settings got saved, then fix them
     // nodeDB->LOG_DEBUG("region=%d, NODENUM=0x%x, dbsize=%d", config.lora.region, myNodeInfo.my_node_num, numMeshNodes);
 
     // Uncomment below to always enable UDP broadcasts
@@ -412,9 +387,7 @@ NodeDB::NodeDB()
 #endif
     }
 #endif
-    LOG_INFO("DEBUG: Before saveToDisk()");
     saveToDisk(saveWhat);
-    LOG_INFO("DEBUG: NodeDB constructor COMPLETE");
 }
 
 /**
