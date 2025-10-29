@@ -36,10 +36,16 @@ void tft_task_handler(void *param = nullptr)
 
 void tftSetup(void)
 {
+    LOG_INFO("tftSetup() called - initializing TFT display");
 #ifndef ARCH_PORTDUINO
+    LOG_INFO("Creating DeviceScreen...");
     deviceScreen = &DeviceScreen::create();
+    LOG_INFO("DeviceScreen created at %p", deviceScreen);
+    LOG_INFO("Creating PacketAPI...");
     PacketAPI::create(PacketServer::init());
+    LOG_INFO("Initializing DeviceScreen with PacketClient...");
     deviceScreen->init(new PacketClient);
+    LOG_INFO("DeviceScreen initialized");
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;
@@ -124,13 +130,18 @@ void tftSetup(void)
 #endif
 
     if (deviceScreen) {
+        LOG_INFO("deviceScreen is valid, setting up task handler");
 #ifdef ARCH_ESP32
         tftSleepObserver.observe(&notifyLightSleep);
         endSleepObserver.observe(&notifyLightSleepEnd);
+        LOG_INFO("Creating tft_task_handler on core 0");
         xTaskCreatePinnedToCore(tft_task_handler, "tft", 10240, NULL, 1, NULL, 0);
+        LOG_INFO("tft_task_handler created successfully");
 #elif defined(ARCH_PORTDUINO)
         std::thread *tft_task = new std::thread([] { tft_task_handler(); });
 #endif
+    } else {
+        LOG_ERROR("deviceScreen is NULL - display will not work!");
     }
 }
 

@@ -537,7 +537,11 @@ void setup()
 #endif
 
 #if HAS_TFT
+    LOG_INFO("About to call tftSetup() - HAS_TFT is defined");
     tftSetup();
+    LOG_INFO("tftSetup() returned");
+#else
+    LOG_WARN("HAS_TFT is NOT defined - TFT display disabled!");
 #endif
 
     // Currently only the tbeam has a PMU
