@@ -85,7 +85,7 @@ void tftSetup(void)
     // PacketAPI enters programmingMode when config.bluetooth.enabled=true,
     // which blocks UI from receiving configuration. This is a variant-level
     // workaround to avoid modifying tree code (NodeDB.cpp).
-    extern meshtastic_Config config;
+    extern meshtastic_LocalConfig config;
     if (config.bluetooth.enabled) {
         LOG_WARN("Forcing config.bluetooth.enabled=false to prevent PacketAPI programmingMode");
         config.bluetooth.enabled = false;
