@@ -9,7 +9,6 @@
 #include "graphics/DeviceScreen.h"
 #include "graphics/driver/DisplayDriverConfig.h"
 #include "lvgl.h"
-#include "FSCommon.h"
 
 #ifdef ARCH_PORTDUINO
 #include "PortduinoGlue.h"
@@ -26,46 +25,6 @@ CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t> endSleepObserver =
     CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t>(deviceScreen, &DeviceScreen::wakeUp);
 #endif
 
-void test_lvgl_draw()
-{
-    LOG_INFO("TEST: Drawing test label to screen");
-
-    // Get the active screen
-    lv_obj_t *scr = lv_scr_act();
-    if (!scr) {
-        LOG_ERROR("TEST: lv_scr_act() returned NULL!");
-        return;
-    }
-    LOG_INFO("TEST: Active screen at %p", scr);
-
-    // Set screen background to red for visibility
-    lv_obj_set_style_bg_color(scr, lv_color_hex(0xFF0000), LV_PART_MAIN);
-    lv_obj_set_style_bg_opa(scr, LV_OPA_COVER, LV_PART_MAIN);
-    LOG_INFO("TEST: Screen background set to RED");
-
-    // Create a label
-    lv_obj_t *label = lv_label_create(scr);
-    if (!label) {
-        LOG_ERROR("TEST: lv_label_create() returned NULL!");
-        return;
-    }
-    LOG_INFO("TEST: Label created at %p", label);
-
-    // Set label text
-    lv_label_set_text(label, "MESHTASTIC\nTEST SCREEN\nIf you see this\nLVGL WORKS!");
-    LOG_INFO("TEST: Label text set");
-
-    // Center the label
-    lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
-    LOG_INFO("TEST: Label centered");
-
-    // Set label style - use default font
-    lv_obj_set_style_text_color(label, lv_color_hex(0xFFFFFF), LV_PART_MAIN);
-    LOG_INFO("TEST: Label style set (white text, default font)");
-
-    LOG_INFO("TEST: Drawing complete, triggering screen refresh");
-}
-
 void tft_task_handler(void *param = nullptr)
 {
     while (true) {
@@ -79,16 +38,6 @@ void tft_task_handler(void *param = nullptr)
 void tftSetup(void)
 {
     LOG_INFO("tftSetup() called - initializing TFT display");
-
-    // WORKAROUND: Delete corrupted uiconfig.proto BEFORE initializing DeviceScreen
-    // The corrupted file prevents device-ui from requesting configuration
-    LOG_INFO("Checking for corrupted uiconfig.proto file...");
-    if (FSCom.exists("/prefs/uiconfig.proto")) {
-        LOG_WARN("Found /prefs/uiconfig.proto, deleting to clear corruption...");
-        FSCom.remove("/prefs/uiconfig.proto");
-        LOG_INFO("Deleted /prefs/uiconfig.proto - device-ui will create fresh config");
-    }
-
 #ifndef ARCH_PORTDUINO
     LOG_INFO("Creating DeviceScreen...");
     deviceScreen = &DeviceScreen::create();
@@ -97,20 +46,7 @@ void tftSetup(void)
     PacketAPI::create(PacketServer::init());
     LOG_INFO("Initializing DeviceScreen with PacketClient...");
     deviceScreen->init(new PacketClient);
-    LOG_INFO("DeviceScreen initialized");
-
-    // Check if device-ui created any UI objects
-    delay(1000);  // Give device-ui time to create UI
-    lv_obj_t *scr = lv_scr_act();
-    uint32_t child_count = lv_obj_get_child_cnt(scr);
-    LOG_INFO("Active screen has %d children (UI objects)", child_count);
-
-    if (child_count == 0) {
-        LOG_WARN("No UI objects created by device-ui! Drawing test screen instead...");
-        test_lvgl_draw();
-    } else {
-        LOG_INFO("Device-ui created UI objects successfully");
-    }
+    LOG_INFO("DeviceScreen initialized - device-ui now controls display");
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;
