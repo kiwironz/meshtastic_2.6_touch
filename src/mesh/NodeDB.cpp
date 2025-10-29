@@ -610,8 +610,11 @@ void NodeDB::installDefaultConfig(bool preserveKey = false)
     resetRadioConfig(true); // This also triggers NodeInfo/Position requests since we're fresh
     strncpy(config.network.ntp_server, "meshtastic.pool.ntp.org", 32);
 
-#if (defined(T_DECK) || defined(T_WATCH_S3) || defined(UNPHONE) || defined(PICOMPUTER_S3) || defined(SENSECAP_INDICATOR) ||      \
-     defined(ELECROW_PANEL)) &&                                                                                                  \
+#ifdef MESHTASTIC_EXCLUDE_BLUETOOTH
+    // If Bluetooth is excluded from build, disable it in config
+    config.bluetooth.enabled = false;
+#elif (defined(T_DECK) || defined(T_WATCH_S3) || defined(UNPHONE) || defined(PICOMPUTER_S3) || defined(SENSECAP_INDICATOR) || \
+       defined(ELECROW_PANEL)) &&                                                                                            \
     HAS_TFT
     // switch BT off by default; use TFT programming mode or hotkey to enable
     config.bluetooth.enabled = false;
