@@ -10,7 +10,6 @@
 #include "graphics/driver/DisplayDriverConfig.h"
 #include "lvgl.h"
 #include "FSCommon.h"
-#include "configuration.h"
 
 #ifdef ARCH_PORTDUINO
 #include "PortduinoGlue.h"
