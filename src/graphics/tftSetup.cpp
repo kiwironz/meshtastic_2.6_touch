@@ -80,17 +80,6 @@ void tft_task_handler(void *param = nullptr)
 void tftSetup(void)
 {
     LOG_INFO("tftSetup() called - initializing TFT display");
-
-    // WORKAROUND: Force Bluetooth config to disabled to prevent programmingMode
-    // PacketAPI enters programmingMode when config.bluetooth.enabled=true,
-    // which blocks UI from receiving configuration. This is a variant-level
-    // workaround to avoid modifying tree code (NodeDB.cpp).
-    extern meshtastic_LocalConfig config;
-    if (config.bluetooth.enabled) {
-        LOG_WARN("Forcing config.bluetooth.enabled=false to prevent PacketAPI programmingMode");
-        config.bluetooth.enabled = false;
-    }
-
 #ifndef ARCH_PORTDUINO
     LOG_INFO("Creating DeviceScreen...");
     deviceScreen = &DeviceScreen::create();
