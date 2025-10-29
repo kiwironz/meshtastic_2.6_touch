@@ -88,11 +88,18 @@ void tftSetup(void)
     deviceScreen->init(new PacketClient);
     LOG_INFO("DeviceScreen initialized");
 
-    // TEST: Draw something directly to the screen
-    LOG_INFO("Calling test_lvgl_draw() to verify display works...");
-    delay(1000);  // Give display time to initialize
-    test_lvgl_draw();
-    LOG_INFO("test_lvgl_draw() completed");
+    // Check if device-ui created any UI objects
+    delay(1000);  // Give device-ui time to create UI
+    lv_obj_t *scr = lv_scr_act();
+    uint32_t child_count = lv_obj_get_child_cnt(scr);
+    LOG_INFO("Active screen has %d children (UI objects)", child_count);
+
+    if (child_count == 0) {
+        LOG_WARN("No UI objects created by device-ui! Drawing test screen instead...");
+        test_lvgl_draw();
+    } else {
+        LOG_INFO("Device-ui created UI objects successfully");
+    }
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;
