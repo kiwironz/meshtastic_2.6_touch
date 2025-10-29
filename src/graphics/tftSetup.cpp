@@ -27,7 +27,15 @@ CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t> endSleepObserver =
 
 void tft_task_handler(void *param = nullptr)
 {
+    LOG_INFO("tft_task_handler started on core %d", xPortGetCoreID());
+    uint32_t loop_count = 0;
+
     while (true) {
+        loop_count++;
+        if (loop_count % 100 == 0) {
+            LOG_DEBUG("tft_task_handler running: %d loops", loop_count);
+        }
+
         spiLock->lock();
         deviceScreen->task_handler();
         spiLock->unlock();
