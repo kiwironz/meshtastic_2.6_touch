@@ -23,6 +23,12 @@ PacketAPI::PacketAPI(PacketServer *_server)
 
 int32_t PacketAPI::runOnce()
 {
+    static bool firstRun = true;
+    if (firstRun) {
+        LOG_INFO("[PacketAPI] runOnce() first call - starting packet processing");
+        firstRun = false;
+    }
+
     bool success = false;
 #ifndef ARCH_PORTDUINO
     if (config.bluetooth.enabled) {
@@ -42,8 +48,14 @@ int32_t PacketAPI::runOnce()
 
 bool PacketAPI::receivePacket(void)
 {
+    static bool hasLoggedWaiting = false;
+    static uint32_t lastCheckMsec = 0;
+
     bool data_received = false;
-    while (server->hasData()) {
+    if (server->hasData()) {
+        if (!hasLoggedWaiting) {
+            LOG_INFO("[PacketAPI] Receiving data from UI");
+        }
         isConnected = true;
         data_received = true;
 
@@ -82,6 +94,14 @@ bool PacketAPI::receivePacket(void)
         default:
             LOG_ERROR("Error: unhandled meshtastic_ToRadio variant: %d", mr->which_payload_variant);
             break;
+        }
+    } else {
+        // Log periodically if we're not receiving data
+        uint32_t now = millis();
+        if (!hasLoggedWaiting || (now - lastCheckMsec > 5000)) {
+            LOG_INFO("[PacketAPI] Waiting for UI to request config (no data from server)");
+            hasLoggedWaiting = true;
+            lastCheckMsec = now;
         }
     }
     return data_received;
