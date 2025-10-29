@@ -9,6 +9,7 @@
 #include "graphics/DeviceScreen.h"
 #include "graphics/driver/DisplayDriverConfig.h"
 #include "lvgl.h"
+#include "FSCommon.h"
 
 #ifdef ARCH_PORTDUINO
 #include "PortduinoGlue.h"
@@ -87,6 +88,14 @@ void tftSetup(void)
     LOG_INFO("Initializing DeviceScreen with PacketClient...");
     deviceScreen->init(new PacketClient);
     LOG_INFO("DeviceScreen initialized");
+
+    // WORKAROUND: Delete corrupted uiconfig.proto if it exists
+    LOG_INFO("Checking for corrupted uiconfig.proto file...");
+    if (FSCom.exists("/prefs/uiconfig.proto")) {
+        LOG_WARN("Found /prefs/uiconfig.proto, deleting to clear corruption...");
+        FSCom.remove("/prefs/uiconfig.proto");
+        LOG_INFO("Deleted /prefs/uiconfig.proto");
+    }
 
     // Check if device-ui created any UI objects
     delay(1000);  // Give device-ui time to create UI
