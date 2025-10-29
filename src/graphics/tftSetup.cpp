@@ -8,6 +8,7 @@
 #include "comms/PacketServer.h"
 #include "graphics/DeviceScreen.h"
 #include "graphics/driver/DisplayDriverConfig.h"
+#include "lvgl.h"
 
 #ifdef ARCH_PORTDUINO
 #include "PortduinoGlue.h"
@@ -23,6 +24,47 @@ CallbackObserver<DeviceScreen, void *> tftSleepObserver =
 CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t> endSleepObserver =
     CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t>(deviceScreen, &DeviceScreen::wakeUp);
 #endif
+
+void test_lvgl_draw()
+{
+    LOG_INFO("TEST: Drawing test label to screen");
+
+    // Get the active screen
+    lv_obj_t *scr = lv_scr_act();
+    if (!scr) {
+        LOG_ERROR("TEST: lv_scr_act() returned NULL!");
+        return;
+    }
+    LOG_INFO("TEST: Active screen at %p", scr);
+
+    // Set screen background to red for visibility
+    lv_obj_set_style_bg_color(scr, lv_color_hex(0xFF0000), LV_PART_MAIN);
+    lv_obj_set_style_bg_opa(scr, LV_OPA_COVER, LV_PART_MAIN);
+    LOG_INFO("TEST: Screen background set to RED");
+
+    // Create a label
+    lv_obj_t *label = lv_label_create(scr);
+    if (!label) {
+        LOG_ERROR("TEST: lv_label_create() returned NULL!");
+        return;
+    }
+    LOG_INFO("TEST: Label created at %p", label);
+
+    // Set label text
+    lv_label_set_text(label, "MESHTASTIC\nTEST SCREEN\nIf you see this\nLVGL WORKS!");
+    LOG_INFO("TEST: Label text set");
+
+    // Center the label
+    lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
+    LOG_INFO("TEST: Label centered");
+
+    // Set label style
+    lv_obj_set_style_text_color(label, lv_color_hex(0xFFFFFF), LV_PART_MAIN);
+    lv_obj_set_style_text_font(label, &lv_font_montserrat_24, LV_PART_MAIN);
+    LOG_INFO("TEST: Label style set (white text, 24pt)");
+
+    LOG_INFO("TEST: Drawing complete, triggering screen refresh");
+}
 
 void tft_task_handler(void *param = nullptr)
 {
@@ -46,6 +88,12 @@ void tftSetup(void)
     LOG_INFO("Initializing DeviceScreen with PacketClient...");
     deviceScreen->init(new PacketClient);
     LOG_INFO("DeviceScreen initialized");
+
+    // TEST: Draw something directly to the screen
+    LOG_INFO("Calling test_lvgl_draw() to verify display works...");
+    delay(1000);  // Give display time to initialize
+    test_lvgl_draw();
+    LOG_INFO("test_lvgl_draw() completed");
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;
