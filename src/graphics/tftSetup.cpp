@@ -58,10 +58,9 @@ void test_lvgl_draw()
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
     LOG_INFO("TEST: Label centered");
 
-    // Set label style
+    // Set label style - use default font
     lv_obj_set_style_text_color(label, lv_color_hex(0xFFFFFF), LV_PART_MAIN);
-    lv_obj_set_style_text_font(label, &lv_font_montserrat_24, LV_PART_MAIN);
-    LOG_INFO("TEST: Label style set (white text, 24pt)");
+    LOG_INFO("TEST: Label style set (white text, default font)");
 
     LOG_INFO("TEST: Drawing complete, triggering screen refresh");
 }
