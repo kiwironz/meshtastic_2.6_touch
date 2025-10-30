@@ -29,11 +29,23 @@ void tft_task_handler(void *param = nullptr)
 {
     LOG_INFO("tft_task_handler started on core %d", xPortGetCoreID());
 
+    static uint32_t lastLog = 0;
+    uint32_t loopCount = 0;
+
     while (true) {
         spiLock->lock();
         deviceScreen->task_handler();
         spiLock->unlock();
         deviceScreen->sleep();
+
+        // Log periodically to confirm task is running
+        loopCount++;
+        uint32_t now = millis();
+        if (now - lastLog >= 10000) {  // Every 10 seconds
+            LOG_DEBUG("tft_task_handler alive: %u loops in last 10s", loopCount);
+            loopCount = 0;
+            lastLog = now;
+        }
 
         // Yield to prevent watchdog timeout - required for FreeRTOS task
         vTaskDelay(pdMS_TO_TICKS(1));
