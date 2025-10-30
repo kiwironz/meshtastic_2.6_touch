@@ -27,25 +27,11 @@ CallbackObserver<DeviceScreen, esp_sleep_wakeup_cause_t> endSleepObserver =
 
 void tft_task_handler(void *param = nullptr)
 {
-    LOG_INFO("tft_task_handler started on core %d", xPortGetCoreID());
-
-    static uint32_t lastLog = 0;
-    uint32_t loopCount = 0;
-
     while (true) {
         spiLock->lock();
         deviceScreen->task_handler();
         spiLock->unlock();
         deviceScreen->sleep();
-
-        // Log periodically to confirm task is running
-        loopCount++;
-        uint32_t now = millis();
-        if (now - lastLog >= 10000) {  // Every 10 seconds
-            LOG_DEBUG("tft_task_handler alive: %u loops in last 10s", loopCount);
-            loopCount = 0;
-            lastLog = now;
-        }
 
         // Yield to prevent watchdog timeout - required for FreeRTOS task
         vTaskDelay(pdMS_TO_TICKS(1));
@@ -54,35 +40,10 @@ void tft_task_handler(void *param = nullptr)
 
 void tftSetup(void)
 {
-    LOG_INFO("tftSetup() called - initializing TFT display");
 #ifndef ARCH_PORTDUINO
-    LOG_INFO("Creating DeviceScreen...");
     deviceScreen = &DeviceScreen::create();
-    LOG_INFO("DeviceScreen created at %p", deviceScreen);
-
-    LOG_INFO("Creating PacketServer...");
-    auto *server = PacketServer::init();
-    LOG_INFO("PacketServer created at %p", server);
-
-    LOG_INFO("Creating PacketClient...");
-    auto *client = new PacketClient();
-    LOG_INFO("PacketClient created at %p", client);
-
-    LOG_INFO("Creating PacketAPI with server...");
-    PacketAPI::create(server);
-    LOG_INFO("PacketAPI created");
-
-    LOG_INFO("Initializing DeviceScreen with PacketClient...");
-    deviceScreen->init(client);
-    LOG_INFO("DeviceScreen initialized - device-ui now controls display");
-
-    // DIAGNOSTIC: Test if device-ui can receive config even without requesting it
-    // This helps diagnose if issue is with requesting vs receiving
-    extern PacketAPI *packetAPI;
-    if (packetAPI) {
-        LOG_WARN("[DIAGNOSTIC] Will manually send config to device-ui in 5 seconds...");
-        // Note: This happens in the setup thread, config will be sent when PacketAPI thread runs
-    }
+    PacketAPI::create(PacketServer::init());
+    deviceScreen->init(new PacketClient);
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;

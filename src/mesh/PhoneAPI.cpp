@@ -44,18 +44,13 @@ PhoneAPI::~PhoneAPI()
 
 void PhoneAPI::handleStartConfig()
 {
-    LOG_WARN("[DIAGNOSTIC] handleStartConfig() called - starting config send sequence");
-
     // Must be before setting state (because state is how we know !connected)
     if (!isConnected()) {
-        LOG_WARN("[DIAGNOSTIC] Client not connected, calling onConnectionChanged(true)");
         onConnectionChanged(true);
         observe(&service->fromNumChanged);
 #ifdef FSCom
         observe(&xModem.packetReady);
 #endif
-    } else {
-        LOG_WARN("[DIAGNOSTIC] Client already connected");
     }
 
     // even if we were already connected - restart our state machine
@@ -65,7 +60,6 @@ void PhoneAPI::handleStartConfig()
         LOG_INFO("Client only wants node info, skipping other config");
     } else {
         state = STATE_SEND_MY_INFO;
-        LOG_WARN("[DIAGNOSTIC] State set to STATE_SEND_MY_INFO");
     }
     pauseBluetoothLogging = true;
     spiLock->lock();
