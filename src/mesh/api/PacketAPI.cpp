@@ -50,6 +50,8 @@ bool PacketAPI::receivePacket(void)
 {
     static bool hasLoggedWaiting = false;
     static uint32_t lastCheckMsec = 0;
+    static bool manualConfigSent = false;
+    static uint32_t startTime = millis();
 
     bool data_received = false;
     if (server->hasData()) {
@@ -102,6 +104,13 @@ bool PacketAPI::receivePacket(void)
             LOG_INFO("[PacketAPI] Waiting for UI to request config (no data from server)");
             hasLoggedWaiting = true;
             lastCheckMsec = now;
+        }
+
+        // DIAGNOSTIC: After 10 seconds, manually send config to test if device-ui can receive it
+        if (!manualConfigSent && (now - startTime > 10000)) {
+            LOG_WARN("[DIAGNOSTIC] UI hasn't requested config after 10s - manually triggering config send");
+            handleStartConfig();
+            manualConfigSent = true;
         }
     }
     return data_received;

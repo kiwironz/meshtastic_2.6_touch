@@ -64,6 +64,14 @@ void tftSetup(void)
     LOG_INFO("Initializing DeviceScreen with PacketClient...");
     deviceScreen->init(new PacketClient);
     LOG_INFO("DeviceScreen initialized - device-ui now controls display");
+
+    // DIAGNOSTIC: Test if device-ui can receive config even without requesting it
+    // This helps diagnose if issue is with requesting vs receiving
+    extern PacketAPI *packetAPI;
+    if (packetAPI) {
+        LOG_WARN("[DIAGNOSTIC] Will manually send config to device-ui in 5 seconds...");
+        // Note: This happens in the setup thread, config will be sent when PacketAPI thread runs
+    }
 #else
     if (settingsMap[displayPanel] != no_screen) {
         DisplayDriverConfig displayConfig;
