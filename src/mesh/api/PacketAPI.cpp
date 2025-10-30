@@ -118,17 +118,32 @@ bool PacketAPI::receivePacket(void)
 
 bool PacketAPI::sendPacket(void)
 {
+    static bool firstAvailable = false;
     if (server->available()) {
+        if (!firstAvailable) {
+            LOG_WARN("[DIAGNOSTIC] PacketServer is available - can send to device-ui");
+            firstAvailable = true;
+        }
         // fill dummy buffer; we don't use it, we directly send the fromRadio structure
         uint32_t len = getFromRadio(txBuf);
         if (len != 0) {
             static uint32_t id = 0;
             fromRadioScratch.id = ++id;
+            LOG_DEBUG("[DIAGNOSTIC] Sending packet id=%u, which_payload_variant=%d to device-ui",
+                     id, fromRadioScratch.which_payload_variant);
             bool result = server->sendPacket(DataPacket<meshtastic_FromRadio>(id, fromRadioScratch));
             if (!result) {
                 LOG_ERROR("send queue full");
+            } else {
+                LOG_DEBUG("[DIAGNOSTIC] Packet sent successfully");
             }
             return result;
+        }
+    } else {
+        static bool logged = false;
+        if (!logged) {
+            LOG_WARN("[DIAGNOSTIC] PacketServer NOT available - cannot send to device-ui");
+            logged = true;
         }
     }
     return false;
