@@ -34,9 +34,6 @@ void tft_task_handler(void *param = nullptr)
         deviceScreen->task_handler();
         spiLock->unlock();
         deviceScreen->sleep();
-
-        // Yield to prevent watchdog timeout - allow IDLE task to run
-        vTaskDelay(pdMS_TO_TICKS(1));  // 1ms delay yields to other tasks
     }
 }
 
