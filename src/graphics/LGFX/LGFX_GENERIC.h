@@ -5,8 +5,9 @@
 
 // LGFX_GENERIC - Template-based LGFX configuration using platformio.ini defines
 // This is what device-ui includes to get the display driver
+// Class name must match LGFX_DRIVER define (LGFX_GENERIC)
 
-class LGFX : public lgfx::LGFX_Device
+class LGFX_GENERIC : public lgfx::LGFX_Device
 {
     // Panel type from LGFX_PANEL define
 #if defined(LGFX_PANEL)
@@ -21,7 +22,7 @@ class LGFX : public lgfx::LGFX_Device
     lgfx::Light_PWM _light_instance;
 
 public:
-    LGFX(void)
+    LGFX_GENERIC(void)
     {
         // Configure SPI bus
         {
@@ -154,5 +155,5 @@ public:
     }
 };
 
-// Global display instance for device-ui to use
-static LGFX display;
+// Note: device-ui creates its own instance via LGFXDriver<LGFX_GENERIC> template
+// No global static instance needed here
