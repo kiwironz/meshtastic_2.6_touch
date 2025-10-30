@@ -59,10 +59,21 @@ void tftSetup(void)
     LOG_INFO("Creating DeviceScreen...");
     deviceScreen = &DeviceScreen::create();
     LOG_INFO("DeviceScreen created at %p", deviceScreen);
-    LOG_INFO("Creating PacketAPI...");
-    PacketAPI::create(PacketServer::init());
+
+    LOG_INFO("Creating PacketServer...");
+    auto *server = PacketServer::init();
+    LOG_INFO("PacketServer created at %p", server);
+
+    LOG_INFO("Creating PacketClient...");
+    auto *client = new PacketClient();
+    LOG_INFO("PacketClient created at %p", client);
+
+    LOG_INFO("Creating PacketAPI with server...");
+    PacketAPI::create(server);
+    LOG_INFO("PacketAPI created");
+
     LOG_INFO("Initializing DeviceScreen with PacketClient...");
-    deviceScreen->init(new PacketClient);
+    deviceScreen->init(client);
     LOG_INFO("DeviceScreen initialized - device-ui now controls display");
 
     // DIAGNOSTIC: Test if device-ui can receive config even without requesting it
