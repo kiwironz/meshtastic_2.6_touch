@@ -34,6 +34,9 @@ void tft_task_handler(void *param = nullptr)
         deviceScreen->task_handler();
         spiLock->unlock();
         deviceScreen->sleep();
+
+        // Yield to prevent watchdog timeout - required for FreeRTOS task
+        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
