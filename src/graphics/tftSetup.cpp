@@ -32,8 +32,8 @@ void tft_task_handler(void *param = nullptr)
 
     while (true) {
         loop_count++;
-        if (loop_count % 100 == 0) {
-            LOG_DEBUG("tft_task_handler running: %d loops", loop_count);
+        if (loop_count % 10000 == 0) {  // Log every 10000 loops instead of 100
+            LOG_DEBUG("tft_task_handler still running: %d loops", loop_count);
         }
 
         spiLock->lock();
