@@ -22,6 +22,12 @@ class LGFX_GENERIC : public lgfx::LGFX_Device
     lgfx::Light_PWM _light_instance;
 
 public:
+    // Members expected by device-ui
+    uint16_t screenWidth;
+    uint16_t screenHeight;
+
+    bool hasButton() { return false; }  // No physical button on display
+
     LGFX_GENERIC(void)
     {
         // Configure SPI bus
@@ -152,6 +158,41 @@ public:
         }
 
         setPanel(&_panel_instance);
+
+        // Set screen dimensions based on rotation
+        // Rotation 1 or 3 = landscape (swap width/height)
+        // Rotation 0 or 2 = portrait (normal width/height)
+#ifdef LGFX_ROTATION
+        #if (LGFX_ROTATION == 1) || (LGFX_ROTATION == 3)
+            // Landscape mode - swap dimensions
+            #ifdef LGFX_SCREEN_HEIGHT
+                screenWidth = LGFX_SCREEN_HEIGHT;
+            #else
+                screenWidth = 320;
+            #endif
+            #ifdef LGFX_SCREEN_WIDTH
+                screenHeight = LGFX_SCREEN_WIDTH;
+            #else
+                screenHeight = 240;
+            #endif
+        #else
+            // Portrait mode - normal dimensions
+            #ifdef LGFX_SCREEN_WIDTH
+                screenWidth = LGFX_SCREEN_WIDTH;
+            #else
+                screenWidth = 240;
+            #endif
+            #ifdef LGFX_SCREEN_HEIGHT
+                screenHeight = LGFX_SCREEN_HEIGHT;
+            #else
+                screenHeight = 320;
+            #endif
+        #endif
+#else
+        // Default: portrait 240x320
+        screenWidth = 240;
+        screenHeight = 320;
+#endif
     }
 };
 
